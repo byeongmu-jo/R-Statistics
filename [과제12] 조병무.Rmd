@@ -1,0 +1,108 @@
+---
+title: "test"
+output: html_document
+---
+부모의 키가 클수록 자식의 키도 상대적으로 크다고 하는데, 아버지의 키와 아들의 키를 조사하였더니 아래와 같이 나왔다고 한다. 이 자료를 바탕으로 해서 회귀식을 구하고 아버지의 키가 165cm일 때 아들의 키는 얼마인지 예측하시오.
+```{r}
+x <- c(150,  160,  170,  180,  190)
+y <- c(176,  179,  182,  181,  185)
+
+g <- data.frame(x,y)
+fit <- lm(x ~ y, data=g)
+plot(fit)
+summary(fit)
+# y = 4.4248x + -629.1150
+# 만약 아버지키가 165 이면 아들키는 179.46이(가) 될 것이다.
+```
+
+소득이 높을수록 신용카드 사용량이 많아진다고 하는데, 월 소득 대비 신용카드 사용량을 조사하였더니 아래와 같이 나왔다고 한다. 이 자료를 바탕으로 해서 회귀식을 구하고, 월 소득이 250만원일 때 신용카드 사용량을 예측하시오. (단위: 만원)
+```{r}
+c <- c(100,  200,  300,  400,  500)
+d <- c( 30,    70,    85,  140,  197)
+
+f <- data.frame(c,d)
+fit2 <- lm(c ~ d, data=g)
+summary(fit2)
+# y = 2.3853x + 50.9765
+# 만약 월 소득 250 이면 신용카드 사용량는 83.43이(가) 될 것이다.
+```
+
+mtcars 데이터셋에서 배기량(disp)에 따른 마력(hp)의 회귀식을 구하시오.
+```{r}
+mtcars
+data <- mtcars[,c("disp","hp")]
+fit3 <- lm(disp ~ hp, data=data)
+summary(fit3)
+# y=1.4298x + 20.9925
+```
+
+MASS 패키지를 설치하고, 이 패키지 안에 있는 Boston 데이터셋을 이용하여 Boston 인근의 집값을 결정하는 다중회귀 모델을 만드시오.
+```{r}
+library(MASS)
+library(leaps)
+library(car)
+
+
+data1 <- Boston
+head(data1)
+any(is.na(data1))#데이터 중에 NA 결측치 값의 존재여부를 판단
+summary(data1)
+
+fit4 <- lm(medv ~ crim + zn + indus + chas +  nox  +  rm+  age+    
+             dis +rad+ tax+ ptratio + black +lstat, data=data1)
+summary(fit4)
+par(mfrow=c(1,1))
+plot(fit4)
+influencePlot(fit4, id.method = "identify")
+# 이상치 확인 결과 데이터 입력 오류가 아니라 충분히 설명력을 가지고 있다고 생각하여 제거 하지 않고 그대로 사용한다.
+
+sqrt(vif(fit4)) #루투 VIF값이 2이상이면 다중공산성이 충분이 있다고 보여진다.
+#    crim       zn    indus     chas      nox       rm 
+#1.338728 1.516166 1.997898 1.036337 2.096120 1.390591 
+
+#age      dis      rad      tax  ptratio    black 
+#1.760916 1.988956 2.735781 3.001425 1.341299 1.161258 
+
+#lstat 
+#1.715078 
+
+# tax 제거
+fit4 <- lm(medv ~ crim + zn + indus + chas +  nox  +  rm+  age+    
+             dis +rad+ ptratio + black +lstat, data=data1)
+sqrt(vif(fit4))
+#crim       zn    indus     chas      nox       rm      age      dis      rad 
+#1.338634 1.477918 1.796111 1.028698 2.090280 1.386750 1.760126 1.988579 1.684486 
+
+#ptratio    black    lstat 
+#1.337475 1.160846 1.714876 
+
+# nox 제거
+fit4 <- lm(medv ~ crim + zn + indus + chas +    rm+  age+    
+             dis +rad+ ptratio + black +lstat, data=data1)
+sqrt(vif(fit4))
+
+step(fit4, direction = 'backward') #대부분 사용
+summary(fit4)
+
+# 유의확률 0.05미만으로 영향력이 없다고 판단하여  age제거 후 분석
+fit4 <- lm(medv ~ crim + zn + indus + chas +    rm+     
+             dis +rad+ ptratio + black +lstat, data=data1)
+summary(fit4)
+sqrt(vif(fit4))
+
+# 유의확률 0.05미만으로 영향력이 없다고 판단하여  rad제거 후 분석
+fit4 <- lm(medv ~ crim + zn + indus + chas +    rm+     
+             dis + ptratio + black +lstat, data=data1)
+summary(fit4)
+sqrt(vif(fit4))
+step(fit4, direction = 'backward') #대부분 사용
+
+par(mfrow=c(2,2))
+plot(fit4)
+
+#최종 모형
+lm(medv ~ crim + zn + indus + chas +    rm+     
+             dis + ptratio + black +lstat, data=data1)
+```
+
+
