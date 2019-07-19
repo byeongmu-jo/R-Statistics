@@ -1,0 +1,2388 @@
+C:\ProgramData\Anaconda3\python.exe
+"C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\helpers\pydev\pydevconsole.py" - -mode = client - -port = 50150
+import sys;
+
+print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['D:/Workspace/python'])
+Python
+3.7
+.3(default, Mar
+27
+2019, 17:13:21) [MSC v.1915 64 bit(AMD64)]
+Type
+'copyright', 'credits' or 'license'
+for more information
+    IPython
+    7.4
+    .0 - - An
+    enhanced
+    Interactive
+    Python.Type
+    '?'
+    for help.
+        PyDev
+    console: using
+    IPython
+    7.4
+    .0
+Python
+3.7
+.3(default, Mar
+27
+2019, 17:13:21) [MSC v.1915 64 bit(AMD64)]
+on
+win32
+5 + 4
+Out[2]: 9
+a = [1, 3, 5, 8, 4, 6]
+persin = ['jam', 17, 175.3, true]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-4-d984ff00e0d7>", line
+1, in < module >
+persin = ['jam', 17, 175.3, true]
+NameError: name
+'true' is not defined
+persin = ['jam', 17, 175.3, True]
+1:10
+File
+"<ipython-input-6-fb572e210018>", line
+1
+1:10
+^
+SyntaxError: illegal
+target
+for annotation
+    range(10)
+Out[7]: range(0, 10)
+a = list[range(10)]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-8-253bcb24dd70>", line
+1, in < module >
+a = list[range(10)]
+TypeError: 'type'
+object is not subscriptable
+a = list(range(10))
+a
+Out[10]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+d = list(rang(-4, 10, 2))
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-11-56358700d807>", line
+1, in < module >
+d = list(rang(-4, 10, 2))
+NameError: name
+'rang' is not defined
+d = list(range(-4, 10, 2))
+d
+Out[13]: [-4, -2, 0, 2, 4, 6, 8]
+e = (3, 5, 9, 16, 27)
+e
+Out[15]: (3, 5, 9, 16, 27)
+f = 3, 5, 9, 16, 27
+f
+Out[17]: (3, 5, 9, 16, 27)
+(38)
+Out[18]: 38
+(38,)
+Out[19]: (38,)
+h = (38)
+i = (38,)
+i = tuple(38)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-22-880519f2bc14>", line
+1, in < module >
+i = tuple(38)
+TypeError: 'int'
+object is not iterable
+i = tuple(range(5))
+i
+Out[24]: (0, 1, 2, 3, 4)
+list(e)
+Out[25]: [3, 5, 9, 16, 27]
+e
+Out[26]: (3, 5, 9, 16, 27)
+list('heeli')
+Out[27]: ['h', 'e', 'e', 'l', 'i']
+list('heeli')
+Out[28]: ['h', 'e', 'e', 'l', 'i']
+tuple(heelli)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-29-b9d61597e2e0>", line
+1, in < module >
+tuple(heelli)
+NameError: name
+'heelli' is not defined
+tuple('heelli')
+Out[30]: ('h', 'e', 'e', 'l', 'l', 'i')
+x = [1, 2, 3]
+a, b, c = x
+x
+Out[33]: [1, 2, 3]
+a
+Out[34]: 1
+b
+Out[35]: 2
+c
+Out[36]: 3
+y = 4, 5, 6
+d, e, f = y
+10
+20
+File
+"<ipython-input-39-3a475d9719aa>", line
+1
+10
+20
+^
+SyntaxError: invalid
+syntax
+input.split
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-40-29276e452b0c>", line
+1, in < module >
+input.split
+AttributeError: 'builtin_function_or_method'
+object
+has
+no
+attribute
+'split'
+input().split()
+10
+20
+Out[41]: ['10', '20']
+a, b = x
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-42-85908ead0bc6>", line
+1, in < module >
+a, b = x
+ValueError: too
+many
+values
+to
+unpack(expected
+2)
+x = input().split()
+10
+20
+a, b = x
+a
+Out[45]: '10'
+b
+Out[46]: '20'
+str(10)
+Out[47]: '10'
+str(10, 5, 4)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-48-2f95194a08e7>", line
+1, in < module >
+str(10, 5, 4)
+TypeError: str()
+argument
+2
+must
+be
+str, not int
+str(10, 4)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-49-a438f5e2bf57>", line
+1, in < module >
+str(10, 4)
+TypeError: str()
+argument
+2
+must
+be
+str, not int
+str(1, 2, 3, 4)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-50-a97eed3b1c05>", line
+1, in < module >
+str(1, 2, 3, 4)
+TypeError: str()
+takes
+at
+most
+3
+arguments(4
+given)
+a = list(ranf(0, 100, 10))
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-51-89906121ead7>", line
+1, in < module >
+a = list(ranf(0, 100, 10))
+NameError: name
+'ranf' is not defined
+a = list(range(0, 100, 10))
+a
+Out[53]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+30 in a
+Out[54]: True
+dataframe(a)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-55-96ed1f372199>", line
+1, in < module >
+dataframe(a)
+NameError: name
+'dataframe' is not defined
+43 in (38, 76, 43, 62, 19)
+Out[56]: True
+1 in range(10)
+Out[57]: True
+'h' in 'hello'
+Out[58]: True
+hello
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-59-f572d396fae9>", line
+1, in < module >
+hello
+NameError: name
+'hello' is not defined
+'helllo'
+Out[60]: 'helllo'
+a + [100, 200, 300]
+Out[61]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300]
+a + (100, 200, 300)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-62-43163976bea2>", line
+1, in < module >
+a + (100, 200, 300)
+TypeError: can
+only
+concatenate
+list(not "tuple")
+to
+list
+list(range(0, 10)) + list(range(10, 20))
+Out[63]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+'Hello, ' + 'world!'
+Out[64]: 'Hello, world!'
+'Hello, ' + 10
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-65-58ab15b20da8>", line
+1, in < module >
+'Hello, ' + 10
+TypeError: can
+only
+concatenate
+str(not "int")
+to
+str
+'Hello, ' + '10'
+Out[66]: 'Hello, 10'
+'Hello, ' + '1000'
+Out[67]: 'Hello, 1000'
+int('Hello, ') + 1000
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-68-78a3bd21e74d>", line
+1, in < module >
+int('Hello, ') + 1000
+ValueError: invalid
+literal
+for int() with base 10: 'Hello, '
+int('Hello, ')
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-69-e3ea2d7deb5a>", line
+1, in < module >
+int('Hello, ')
+ValueError: invalid
+literal
+for int() with base 10: 'Hello, '
+a * 3
+Out[70]:
+[0,
+ 10,
+ 20,
+ 30,
+ 40,
+ 50,
+ 60,
+ 70,
+ 80,
+ 90,
+ 0,
+ 10,
+ 20,
+ 30,
+ 40,
+ 50,
+ 60,
+ 70,
+ 80,
+ 90,
+ 0,
+ 10,
+ 20,
+ 30,
+ 40,
+ 50,
+ 60,
+ 70,
+ 80,
+ 90]
+i * 3
+Out[71]: (0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4)
+3 * y
+Out[72]: (4, 5, 6, 4, 5, 6, 4, 5, 6)
+tuple(range(0, 5, 2)) * 5
+Out[73]: (0, 2, 4, 0, 2, 4, 0, 2, 4, 0, 2, 4, 0, 2, 4)
+len(y)
+Out[74]: 3
+len(tuple(range(0, 5, 2)) * 5)
+Out[75]: 15
+len('안녕하세요?')
+Out[76]: 6
+range('안녕하세요')
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-77-e8384f0b0500>", line
+1, in < module >
+range('안녕하세요')
+TypeError: 'str'
+object
+cannot
+be
+interpreted as an
+integer
+id('안녕하세요')
+Out[78]: 96255072
+len(hello.encode('utf-8'))
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-79-c90b0a04e099>", line
+1, in < module >
+len(hello.encode('utf-8'))
+NameError: name
+'hello' is not defined
+len(hello.encode('utf-kr'))
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-80-29cae666c3ab>", line
+1, in < module >
+len(hello.encode('utf-kr'))
+NameError: name
+'hello' is not defined
+a
+Out[81]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a[0]
+Out[82]: 0
+a[3]
+Out[83]: 30
+a[10]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-84-7c7cb9812849>", line
+1, in < module >
+a[10]
+IndexError: list
+index
+out
+of
+range
+a[9]
+Out[85]: 90
+range(0, 10, 2)
+Out[86]: range(0, 10, 2)
+r
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-87-d17ca1acc36c>", line
+1, in < module >
+r
+NameError: name
+'r' is not defined
+r = range(0, 10, 2)
+r
+Out[89]: range(0, 10, 2)
+r
+Out[90]: range(0, 10, 2)
+r[2]
+Out[91]: 4
+hello = 'hello, world!'
+hello[5]
+Out[93]: ','
+a
+Out[94]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a.__getitem__(1)
+Out[95]: 10
+a.__getitem__(0)
+Out[96]: 0
+a.__getitem__(10)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-97-347bdb4b9815>", line
+1, in < module >
+a.__getitem__(10)
+IndexError: list
+index
+out
+of
+range
+a.__getitem__(9)
+Out[98]: 90
+r[-3]
+Out[99]: 4
+r
+Out[100]: range(0, 10, 2)
+list[r]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-101-c64bb0b6304b>", line
+1, in < module >
+list[r]
+TypeError: 'type'
+object is not subscriptable
+list(r)
+Out[102]: [0, 2, 4, 6, 8]
+hello
+Out[103]: 'hello, world!'
+hello[-1]
+Out[104]: '!'
+len(b)
+Out[105]: 2
+b
+Out[106]: '20'
+b = tuple(38, 21, 53, 62, 19)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-107-016bd8748161>", line
+1, in < module >
+b = tuple(38, 21, 53, 62, 19)
+TypeError: tuple
+expected
+at
+most
+1
+arguments, got
+5
+tuple(38, 21, 53, 62, 19)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-108-a9d0caef743c>", line
+1, in < module >
+tuple(38, 21, 53, 62, 19)
+TypeError: tuple
+expected
+at
+most
+1
+arguments, got
+5
+a = [0] * 5
+a
+Out[110]: [0, 0, 0, 0, 0]
+a[0] = 38
+a[1 = 21]
+File
+"<ipython-input-112-0648064fae6d>", line
+1
+a[1 = 21]
+^
+SyntaxError: invalid
+syntax
+a[1] = 21]
+File
+"<ipython-input-113-f6835beec303>", line
+1
+a[1] = 21]
+^
+SyntaxError: invalid
+syntax
+a[1] = 21
+a[2] = 19
+a[3] = 47
+a[4] = 65
+a
+Out[118]: [38, 21, 19, 47, 65]
+del [2]
+File
+"<ipython-input-119-6b63c6683b4b>", line
+1
+del [2]
+    ^
+    SyntaxError: can
+'t delete literal
+del a[2]
+a
+Out[121]: [38, 21, 47, 65]
+a[0:10]
+Out[122]: [38, 21, 47, 65]
+a[0:2]
+Out[123]: [38, 21]
+a
+Out[124]: [38, 21, 47, 65]
+a[0:10]
+Out[125]: [38, 21, 47, 65]
+a = range(0, 100, 10)
+a
+Out[127]: range(0, 100, 10)
+list(a)
+Out[128]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a = list(a)
+a
+Out[130]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a[5:1]
+Out[131]: []
+a[:7]
+Out[132]: [0, 10, 20, 30, 40, 50, 60]
+a[4:]
+Out[133]: [40, 50, 60, 70, 80, 90]
+a[1:]
+Out[134]: [10, 20, 30, 40, 50, 60, 70, 80, 90]
+a[:]
+Out[135]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a[5::2]
+Out[136]: [50, 70, 90]
+a
+Out[137]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+b = tuple(ranhe(0, 100, 10))
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-138-5a22fc996c88>", line
+1, in < module >
+        b = tuple(ranhe(0, 100, 10))
+NameError: name
+'ranhe' is not defined
+b = tuple(range(0, 100, 10))
+r = range(0, 10)
+r
+Out[141]: range(0, 10)
+r[4:7]
+Out[142]: range(4, 7)
+s = slice(4, 7, 2)
+s
+Out[144]: slice(4, 7, 2)
+list(s)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-145-0bd5623f1e18>", line
+1, in < module >
+        list(s)
+TypeError: 'slice'
+object is not iterable
+tuple(s)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-146-7e0fc6066ce2>", line
+1, in < module >
+        tuple(s)
+TypeError: 'slice'
+object is not iterable
+s
+Out[147]: slice(4, 7, 2)
+a
+Out[148]: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+a[2:5]
+Out[149]: [20, 30, 40]
+a[2:5] = ['a', 'b', 'c']
+a
+Out[151]: [0, 10, 'a', 'b', 'c', 50, 60, 70, 80, 90]
+a[2:5] = [1000]
+a
+Out[153]: [0, 10, 1000, 50, 60, 70, 80, 90]
+a[3]
+Out[154]: 50
+a[2] = [20, 30, 40]
+a
+Out[156]: [0, 10, [20, 30, 40], 50, 60, 70, 80, 90]
+a[3]
+Out[157]: 50
+a[2]
+Out[158]: [20, 30, 40]
+del a[2]
+a
+Out[160]: [0, 10, 50, 60, 70, 80, 90]
+a[2] = 20, 30, 40
+a
+Out[162]: [0, 10, (20, 30, 40), 60, 70, 80, 90]
+del a[2]
+a
+Out[164]: [0, 10, 60, 70, 80, 90]
+a[1:3]
+Out[165]: [10, 60]
+a
+Out[166]: [0, 10, 60, 70, 80, 90]
+lux = [490, 334, 550, 18.72]
+lux
+Out[168]: [490, 334, 550, 18.72]
+lux = {'health': 490, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux
+Out[170]: {'health': 490, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux['health']
+Out[171]: 490
+lux[2]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-172-1f8ef6c2395b>", line
+1, in < module >
+        lux[2]
+KeyError: 2
+x = {100: 'hundred', False: 0, 3.5: [3.5, 3.5]}
+x
+Out[174]: {100: 'hundred', False: 0, 3.5: [3.5, 3.5]}
+lux1 = dict(health=490, mana=334, melee=550, armor=18.72)
+lux1
+Out[176]: {'health': 490, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux2 = dict(zip(['health', 'mana', 'melee', 'armor'], [490, 334, 550, 18.72]))
+lux2
+Out[178]: {'health': 490, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux3 = dict([('health', 490), ('mana', 334), ('melee', 550), ('armor', 18.72)])
+lux3
+Out[180]: {'health': 490, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux3[health]
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-181-0002a7342b34>", line
+1, in < module >
+        lux3[health]
+NameError: name
+'health' is not defined
+lux3(health)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-182-b45866635a86>", line
+1, in < module >
+        lux3(health)
+NameError: name
+'health' is not defined
+lux3['health']
+Out[183]: 490
+lux3['health'] = 1232
+lux3
+Out[185]: {'health': 1232, 'mana': 334, 'melee': 550, 'armor': 18.72}
+lux3['armor'] = 8000000000000000000
+lux3
+Out[187]: {'health': 1232, 'mana': 334, 'melee': 550, 'armor': 8000000000000000000}
+lux3['mana_regen'] = 3.28
+lux3
+Out[189]:
+{'health': 1232,
+ 'mana': 334,
+ 'melee': 550,
+ 'armor': 8000000000000000000,
+ 'mana_regen': 3.28}
+'health'
+un
+lux
+File
+"<ipython-input-190-2bb7b47b8699>", line
+1
+'health'
+un
+lux
+^
+SyntaxError: invalid
+syntax
+'health' in lux3
+Out[191]: True
+'attack_speed' not in lux
+Out[192]: True
+if dkdj
+rhrh
+aoadk
+
+File
+"<ipython-input-193-b20ca7393bf0>", line
+1
+if dkdj
+        ^
+        SyntaxError: invalid
+syntax
+if x == 10:
+    print('10입니다')
+
+10
+Out[195]: 10
+x = 10
+10
+Out[197]: 10
+5
+Out[198]: 5
+x
+Out[199]: 10
+x
+Out[200]: 10
+if x == 10:
+    print('10입니다')
+
+10
+입니다
+if x == 10:
+    pass
+if x == 10:
+    print('x is')
+print(10)
+
+x is
+10
+x
+Out[204]: 10
+x = 5
+if x == 10:
+    print('x에 들어있는 숫자는')
+print('10입니다.')
+10
+입니다.
+x = 15
+if x >= 10:
+    print('10이상')
+
+10
+이상
+if x >= 10:
+    print('10이상')
+if x == 15:
+    print('15')
+if x == 20:
+    print('20')
+
+10
+이상
+15
+x = 5
+y = x if x == 10 else 0
+y
+Out[212]: 0
+if x == 10 and y == 20:
+    print('참')
+else:
+    print('거짓')
+
+거짓
+if x == 10 and y == 20:
+    print('참')
+else:
+    print('거짓')
+
+거짓
+x = 10;
+y = 20
+if x == 10 and y == 20:
+    print('참')
+else:
+    print('거짓')
+
+참
+if x > 0 and x < 20:
+    print("wkdkjd")
+
+wkdkjd
+if x > 0 and x < 20:
+    print('20보다 작은 양수입니다.')
+
+20
+보다
+작은
+양수입니다.
+if 0 < x < 20:
+    print('20보다 작은 양수입니다.')
+
+20
+보다
+작은
+양수입니다.
+if 콜라
+버튼을
+눌렀다면:
+콜라를
+내보냄
+elif 사이다
+버튼을
+눌렀다면:
+사이다를
+내보냄
+elif 환타
+버튼을
+눌렀다면:
+환타를
+내보냄:
+else:
+제공하지
+않는
+메뉴
+
+File
+"<ipython-input-220-b81d0d0444fa>", line
+1
+if 콜라
+버튼을
+눌렀다면:
+^
+SyntaxError: invalid
+syntax
+x = 30
+if x == 10:  # x가 10일 때
+    print('10입니다.')
+elif x == 20:  # x가 20일 때
+    print('20입니다.')
+else:  # 앞의 조건식에 모두 만족하지 않을 때
+    print('10도 20도 아닙니다.')
+
+10
+도
+20
+도
+아닙니다.
+x = 20
+if x == 10:  # x가 10일 때
+    print('10입니다.')
+elif x == 20:  # x가 20일 때
+    print('20입니다.')
+else:  # 앞의 조건식에 모두 만족하지 않을 때
+    print('10도 20도 아닙니다.')
+
+20
+입니다.
+for i in range(10):
+    print('he')
+
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+for i in range(10):
+    print('Hello, world!', i)
+Hello, world! 0
+Hello, world! 1
+Hello, world! 2
+Hello, world! 3
+Hello, world! 4
+Hello, world! 5
+Hello, world! 6
+Hello, world! 7
+Hello, world! 8
+Hello, world! 9
+for i in range(11):
+    print('Hello, world!', i)
+Hello, world! 0
+Hello, world! 1
+Hello, world! 2
+Hello, world! 3
+Hello, world! 4
+Hello, world! 5
+Hello, world! 6
+Hello, world! 7
+Hello, world! 8
+Hello, world! 9
+Hello, world! 10
+for i in range(11, 20):
+    print("f", i)
+
+f
+11
+f
+12
+f
+13
+f
+14
+f
+15
+f
+16
+f
+17
+f
+18
+f
+19
+for i in range(0, 20, 2):
+    print("f", i)
+
+f
+0
+f
+2
+f
+4
+f
+6
+f
+8
+f
+10
+f
+12
+f
+14
+f
+16
+f
+18
+for i in reversed(range(10)):
+    print('he')
+
+he
+he
+he
+he
+he
+he
+he
+he
+he
+he
+for i in reversed(range(10)):
+    print('he', i)
+
+he
+9
+he
+8
+he
+7
+he
+6
+he
+5
+he
+4
+he
+3
+he
+2
+he
+1
+he
+0
+for i in range(10):
+    print(i, end='')
+i = 10
+
+01234567
+89
+In[232]: for i in range(10):
+    i = 10
+print(i, end='')
+
+10101010101010101010
+In[233]: for i in range(10):
+    i = 10
+print(i, end=' ')
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+In[234]: for i range(len(a)):
+    print(i)
+
+File
+"<ipython-input-234-9bcf2083b455>", line
+1
+for i range(len(a)):
+    ^
+SyntaxError: invalid
+syntax
+a = list(10, 20, 30, 40, 50)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-235-ba9c69c1d8ff>", line
+1, in < module >
+        a = list(10, 20, 30, 40, 50)
+TypeError: list
+expected
+at
+most
+1
+arguments, got
+5
+a = [10, 20, 30, 40, 50]
+a
+Out[237]: [10, 20, 30, 40, 50]
+for i range(len(a)):
+    print(i)
+
+File
+"<ipython-input-238-9bcf2083b455>", line
+1
+for i range(len(a)):
+    ^
+SyntaxError: invalid
+syntax
+for i range(len(a)):
+    print(a[i])
+
+File
+"<ipython-input-239-8f281acc5a23>", line
+1
+for i range(len(a)):
+    ^
+SyntaxError: invalid
+syntax
+for i in range(len(a)):
+    print(a[i])
+
+10
+20
+30
+40
+50
+for i in a:
+    print(i)
+
+10
+20
+30
+40
+50
+aList = [10, 20, 45, 67, 89]
+aList
+Out[243]: [10, 20, 45, 67, 89]
+for i in aList:
+    print(a)
+
+    [10, 20, 30, 40, 50]
+    [10, 20, 30, 40, 50]
+    [10, 20, 30, 40, 50]
+    [10, 20, 30, 40, 50]
+    [10, 20, 30, 40, 50]
+for ain aList:
+    print(a)
+
+File
+"<ipython-input-245-52c09988f920>", line
+1
+for ain aList:
+    ^
+SyntaxError: invalid
+syntax
+for a in aList:
+    print(a)
+
+10
+20
+45
+67
+89
+for letter in 'python':
+    print(letter)
+
+p
+y
+t
+h
+o
+n
+lux = {'he': 490, 'ma': 334, 'me': 550, 'ar': 183.72}
+for key in lux:
+    print(key)
+
+he
+ma
+me
+ar
+for key in lux:
+    print(key, '=', lux[key])
+
+he = 490
+ma = 334
+me = 550
+ar = 183.72
+sum = 0
+for i in range(1, 101):
+    sum += i
+
+print(sum)
+5050
+factorial = 1
+for i in range(1, 11):
+    factoral *= i
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-255-29cc0594442d>", line
+2, in < module >
+        factoral *= i
+NameError: name
+'factoral' is not defined
+for i in range(1, 11):
+    factorial *= i
+
+factorial
+Out[257]: 3628800
+nomi = factorial
+for i in rnage(1, 6):
+    factorial *= i
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-259-07bd2167c0e0>", line
+1, in < module >
+for i in rnage(1, 6):
+    NameError: name
+'rnage' is not defined
+for i in range(1, 6):
+    factorial *= i
+
+factorial = de
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-261-31b08df44114>", line
+1, in < module >
+        factorial = de
+NameError: name
+'de' is not defined
+factorial = 1
+for i in range(1, 6):
+    factorial *= i
+
+factorial = de
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-264-31b08df44114>", line
+1, in < module >
+        factorial = de
+NameError: name
+'de' is not defined
+factorial = dedf
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-265-2c8994c7acce>", line
+1, in < module >
+        factorial = dedf
+NameError: name
+'dedf' is not defined
+import random
+
+random.random()
+Out[267]: 0.6906942355126371
+random.random()
+Out[268]: 0.5730576077319942
+random.random()
+Out[269]: 0.9022415686295894
+random.random()
+Out[270]: 0.5232748832625439
+random.random()
+Out[271]: 0.3760501617003864
+random.random()
+Out[272]: 0.5675970187968463
+random.random()
+Out[273]: 0.22166055628957626
+random.random()
+Out[274]: 0.9691462221154556
+random.random()
+Out[275]: 0.8775132718153495
+random.random()
+Out[276]: 0.10926891435958586
+random.random()
+Out[277]: 0.22226297378971582
+random.random()
+Out[278]: 0.5257659739824098
+random.random()
+Out[279]: 0.4826713082496059
+random.random()
+Out[280]: 0.4655312011642576
+random.random()
+Out[281]: 0.844004696184497
+random.random()
+Out[282]: 0.20017210721790502
+random.random()
+Out[283]: 0.5364517405393786
+random.random()
+Out[284]: 0.9217083304109325
+random.random(10)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-285-c37ac524301d>", line
+1, in < module >
+        random.random(10)
+TypeError: random()
+takes
+no
+arguments(1
+given)
+random.random(1, 6)
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-286-d9ad2922f8f8>", line
+1, in < module >
+        random.random(1, 6)
+TypeError: random()
+takes
+no
+arguments(2
+given)
+random.random()
+Out[287]: 0.3842683217853021
+random.randint(1, 6)
+Out[288]: 3
+for i in range(10):
+    random.randint(1, 6)
+
+for i in range(10):
+    random.randint(1, 6)
+
+import random as rd
+
+for i in range(10):
+    print(t)
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-292-0f0cb08a2a78>", line
+2, in < module >
+        print(t)
+NameError: name
+'t' is not defined
+for i in range(10):
+    print(i)
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+for i in range(10):
+    print(rd.random(i))
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-294-d33b41213d2b>", line
+2, in < module >
+        print(rd.random(i))
+TypeError: random()
+takes
+no
+arguments(1
+given)
+for i in range(10):
+    print(rd.randint(1, 6))
+
+4
+5
+4
+4
+2
+1
+5
+6
+4
+5
+while True:
+    dice = rd.randint(1, 6)
+    print(dice)
+    if dice == 3:
+        break
+
+1
+6
+1
+2
+2
+1
+4
+1
+3
+while True:
+    dice = rd.randint(1, 6)
+    print(dice)
+    if dice == 3:
+        break
+
+6
+4
+3
+while True:
+    dice1 = rd.randint(1, 6)
+    dice2 = rd.randint(1, 6)
+    print(dice1, dice2)
+    if dice1 + dice2 >= 10:
+        break
+
+4
+3
+4
+3
+5
+2
+6
+4
+count = 0
+while True:
+    dice1 = rd.randint(1, 6)
+    dice2 = rd.randint(1, 6)
+    print(dice1, dice2)
+    count += 1
+    if dice1 + dice2 >= 10:
+        break
+
+print('Total count =', count)
+2
+6
+2
+3
+3
+4
+3
+6
+6
+6
+Total
+count = 5
+i = 0
+while i < 100:
+    i += 1
+    if i % 2 == 0:
+        continue
+    print(i)
+
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
+57
+59
+61
+63
+65
+67
+69
+71
+73
+75
+77
+79
+81
+83
+85
+87
+89
+91
+93
+95
+97
+99
+for i in range(100):
+    if i % 2 == 0:
+        continue
+        print(i, end=' ')
+
+for i in range(100):
+    if i % 2 == 0:
+        continue
+    print(i, end=' ')
+
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
+57
+59
+61
+63
+65
+67
+69
+71
+73
+75
+77
+79
+81
+83
+85
+87
+89
+91
+93
+95
+97
+99
+In[305]: for i in range(100):
+    if i % 2 == 0:
+        continue
+    print(i, end='')
+
+13579111315171921232527293133353739414345474951535557596163656769717375777981838587899193959799
+In[306]: for i in range(100):
+    if i % 2 == 0:
+        continue
+    print(i, end=' ')
+
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+31
+33
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
+57
+59
+61
+63
+65
+67
+69
+71
+73
+75
+77
+79
+81
+83
+85
+87
+89
+91
+93
+95
+97
+99
+In[307]: count = int(input('반복할 횟수를 입력하세요: '))
+반복할
+횟수를
+입력하세요: > ?
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-307-6dc130907604>", line
+1, in < module >
+count = int(input('반복할 횟수를 입력하세요: '))
+ValueError: invalid
+literal
+for int() with base 10: ''
+for i in range(count + 1):  # 0부터 증가하면서 count까지 반복(count + 1)
+    if i % 2 == 0:  # i를 2로 나누었을 때 나머지가 0이면 짝수
+        continue  # 아래 코드를 실행하지 않고 건너뜀
+    print(i)
+
+1
+3
+5
+count
+Out[309]: 5
+count
+Out[310]: 5
+for i in range(count + 1):  # 0부터 증가하면서 count까지 반복(count + 1)
+    if i % 2 == 0:  # i를 2로 나누었을 때 나머지가 0이면 짝수
+        continue  # 아래 코드를 실행하지 않고 건너뜀
+    print(i)
+
+1
+3
+5
+for i in range(count + 1):  # 0부터 증가하면서 count까지 반복(count + 1)
+    if i % 2 == 0:  # i를 2로 나누었을 때 나머지가 0이면 짝수
+        continue  # 아래 코드를 실행하지 않고 건너뜀
+    print(i)
+
+1
+3
+5
+k = 5
+for k in range(i):
+    print('*', end='')
+print()
+** ** *
+import random as rd
+
+for i in range(1, 6):
+    for k in rnage(i):
+        print('*', end = ' ')
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-316-42d4b0091afa>", line
+2, in < module >
+for k in rnage(i):
+    NameError: name
+'rnage' is not defined
+for i in range(1, 6):
+    for k in rnage(i):
+        print('*', end = ' ')
+    print(i)
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-317-fe0b10d99fe3>", line
+2, in < module >
+for k in rnage(i):
+    NameError: name
+'rnage' is not defined
+for i in range(1, 6):
+    for k in rnage(i):
+        print('*', end = ' ')
+    print(k)
+
+Traceback(most
+recent
+call
+last):
+File
+"C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+3296, in run_code
+exec (code_obj, self.user_global_ns, self.user_ns)
+File
+"<ipython-input-318-f585cef8ba08>", line
+2, in < module >
+for k in rnage(i):
+    NameError: name
+'rnage' is not defined
+for i in range(1, 6):
+    for k in range(i):
+        print('*', end = ' ')
+    print()
+
+*
+* *
+* * *
+* * * *
+* * * * *
+for i in range(1, 6):
+    for k in range(i):
+        print('*', end =' ')
+    print()
+
+*
+* *
+* * *
+* * * *
+* * * * *
+range(1, 6)
+Out[321]: range(1, 6)
+for i in range(5):
+    for k in range(5):
+        if i = k:
+            print('*', end=' ')
+        else:
+            print('', end=' ')
+    print()
+
+File
+"<ipython-input-322-f04d1d0d0e7b>", line
+3
+if i = k:
+    ^
+    SyntaxError: invalid
+    syntax
+    for i in range(5):
+        for k in range(5):
+            if i == k:
+                print('*', end=' ')
+            else:
+                print('', end=' ')
+        print()
+
+    *
+    *
+    *
+    *
+    *
+    for i in reversed(range(5)):
+        for k in reversed(range(5)):
+            if i == k:
+                print('*', end=' ')
+            else:
+                print('', end=' ')
+        print()
+
+    *
+    *
+    *
+    *
+    *
+    for i in reversed(range(5)):
+        for k in reversed(range(5)):
+            if i == k:
+                print('', end=' ')
+            else:
+                print('*', end=' ')
+        print()
+
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    for i in reversed(range(5)):
+        for k in reversed(range(5)):
+            if i != k:
+                print('', end=' ')
+            else:
+                print('*', end=' ')
+        print()
+
+    *
+    *
+    *
+    *
+    *
+    for i in reversed(range(5)):
+        for k in reversed(range(5)):
+            if i != k:
+                print('*', end=' ')
+            else:
+                print(' ', end=' ')
+        print()
+
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    for i in reversed(range(5)):
+        for k in range(5):
+            if i != k:
+                print('*', end=' ')
+            else:
+                print(' ', end=' ')
+        print()
+
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    * * * *
+    for i in reversed(range(5)):
+        for k in range(5):
+            if i = k:
+                print('*', end=' ')
+            else:
+                print(' ', end=' ')
+        print()
+
+    File
+    "<ipython-input-329-84ad55c40ccd>", line
+    3
+    if i = k:
+        ^
+        SyntaxError: invalid
+        syntax
+        for i in reversed(range(5)):
+            for k in range(5):
+                if i == k:
+                    print('*', end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
+
+        list = [5, 4, 21, 3, 15]
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] > lis[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-332-3f602a68a7be>", line
+        3, in < module >
+        if list[i] > lis[k]:
+            NameError: name
+        'lis' is not defined
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] > list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        [3, 4, 5, 15, 21]
+        list = [5, 4, 21, 3, 15, 45, 8, 5, 8, 6, 1, 8, 3, 1, 2, 3, 1, 3, ]
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] > list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        [1, 1, 1, 2, 3, 3, 3, 3, 4, 5, 5, 6, 8, 8, 8, 15, 21, 45]
+        숫자를입력하세요In[336]: list = list(map(int, input('숫자를입력하세요').split()))
+        숫자를입력하세요 >? 45, 54, 8, 6, 8, 5, 6, 1, 8, 4, 8, 6, 2, 1,
+
+        ^
+        SyntaxError: invalid
+        syntax
+        list = list(map(int, input('숫자를입력하세요').split()))
+        숫자를입력하세요 >?, 1, 2, 3, 4, 5, 8, 6, 7, 8, 6, 4, 2, 3, 5
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-338-1cebae234080>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list = list(map(int, input('숫자를입력하세요').split()))
+        숫자를입력하세요 >?
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-339-1cebae234080>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list = list(map(int, input('숫자를입력하세요').split()))
+        print(list)
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] < list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        숫자를입력하세요 >? 1
+        3
+        5
+        8
+        1
+        3
+        5
+        8
+        4
+        2
+        1
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-340-2954fca4cf63>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list = list(map(int, input('숫자를입력하세요').split()))
+        print(list)
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] < list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        숫자를입력하세요 >? 1, 3, 2, 5, 6
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-341-2954fca4cf63>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list = list(map(int, input('숫자를입력하세요').split()))
+        print(list)
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] < list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        숫자를입력하세요 >? 1
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-342-2954fca4cf63>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list = list(map(int, input('숫자를입력하세요').split()))
+        print(list)
+        for i in range(0, len(list) - 1):
+            for k in range(i + 1, len(list)):
+                if list[i] < list[k]:
+                    list[i], list[k] = list[k], list[i]
+        print(list)
+        숫자를입력하세요 >? 1
+        2
+        5
+        8
+        9
+        1
+        2
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-343-2954fca4cf63>", line
+        1, in < module >
+        list = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        alist = list(map(int, input('숫자를입력하세요').split()))
+        print(alist)
+        for i in range(0, len(alist) - 1):
+            for k in range(i + 1, len(alist)):
+                if alist[i] < alist[k]:
+                    alist[i], alist[k] = alist[k], alist[i]
+        print(alist)
+        숫자를입력하세요 >? 1
+        2
+        6
+        8
+        6
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-344-f98f0aaba145>", line
+        1, in < module >
+        alist = list(map(int, input('숫자를입력하세요').split()))
+        TypeError: 'list'
+        object is not callable
+        list[1, 2, 5]
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-345-5388c6af57a0>", line
+        1, in < module >
+        list[1, 2, 5]
+        TypeError: list
+        indices
+        must
+        be
+        integers or slices, not tuple
+        list(1, 2, 35)
+        Traceback(most
+        recent
+        call
+        last):
+        File
+        "C:\ProgramData\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line
+        3296, in run_code
+        exec (code_obj, self.user_global_ns, self.user_ns)
+        File
+        "<ipython-input-346-878d513feac7>", line
+        1, in < module >
+        list(1, 2, 35)
+        TypeError: 'list'
+        object is not callable
+        for i in range(5):
+            print(i)
+            for k in range(5):
+                print(k, end = ' ')
+                if k == 4:
+                    break
+            print()
+
+        for i in range(5):
+            print(i)
+            for k in range(5):
+                print(k, end = ' ')
+                if k == i:
+                    break
+            print()
+
+
+        for i in range(1, 100):
+            print(i)
+            if i % 15 == 0:
+                print('fizzbuzz')
+            elif i % 3 == 0:
+                print('fizz')
+            elif i % 5 == 0:
+                print('buzz')
+
+            else:
+                print(i)
+
+
+
+        for i in range(1, 101):
+            print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+
+        File
+        "<ipython-input-363-6238c72dc913>", line
+        1
+        a =
+        for i in range(1, 101):
+            ^
+            SyntaxError: invalid
+            syntax
+            a ==
+            for i in range(1, 101):
+                print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+
+            File
+            "<ipython-input-364-151bc3d7ffca>", line
+            1
+            a ==
+            for i in range(1, 101):
+                ^
+                SyntaxError: invalid
+                syntax
+                a =
+                for i in range(1, 101):
+                    print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+
+
+                            SyntaxError: invalid
+                            syntax
+                            b = list(
+                            for i in range(1, 101):
+                                print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i))
+
+                            File
+                            "<ipython-input-368-7f51e7aa64f5>", line
+                            1
+                            b = list(
+                            for i in range(1, 101):
+                                ^
+                            SyntaxError: invalid
+                            syntax
+                            for i in range(1, 101):
+                                print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+                            a = print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+                            for i in range(1, 101):
+                                print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+                            a = print('fizz' * (1 % 3 == 0) + 'buzz' * (i % 5 == 0) or i)
+
